@@ -1,0 +1,21 @@
+.review-container{
+    background-color:#d8d4d3;
+    height:500px;
+
+        
+    }
+    .text{
+       color:gray;
+       font-style: italic;
+    }
+    .fa {
+        font-size: 25px;
+      }
+      
+      .checked {
+        color: orange;
+      }
+      .heading {
+        font-size: 25px;
+        margin-right: 25px;
+      }

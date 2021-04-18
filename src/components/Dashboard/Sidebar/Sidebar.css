@@ -1,0 +1,19 @@
+.sidebar {
+    background-color: rgb(73, 65, 65);
+
+    background-repeat: no-repeat;
+}
+
+.sidebar li {
+    margin-bottom: 2em;
+    font-size: 20px;
+}
+
+.sidebar li:hover span {
+    display: inline-block;
+    transform: translate(5px);
+}
+
+.sidebar svg {
+    margin-right: 5px;
+}

@@ -1,0 +1,7 @@
+.header-tran {
+    transition: 1s;
+   
+}
+.header-tran:hover{
+    transform: scale(1.1);
+}
