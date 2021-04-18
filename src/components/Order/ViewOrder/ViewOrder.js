@@ -12,7 +12,7 @@ const ViewOrder =  ({order}) => {
              {
                order.image ? <img style={{ width: "19.7rem", height: "18rem" }} src={`data:image/png;base64,${order.image.img}`} alt=""/>
                     :
-                    <img style={{ width: "19.7rem", height: "18rem" }} className="img-fluid mb-3" src={`http://localhost:5000/${order.img}`} alt="" />
+                    <img style={{ width: "19.7rem", height: "18rem" }} className="img-fluid mb-3" src={`https://morning-reef-31954.herokuapp.com/${order.img}`} alt="" />
             }
             
             

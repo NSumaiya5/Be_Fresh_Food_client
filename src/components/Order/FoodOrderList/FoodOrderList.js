@@ -5,14 +5,14 @@ const FoodOrderList = () => {
     const [order, setOrder] = useState([]);
 
     useEffect(() => {
-        fetch('http://localhost:5000/foodOrderList')
+        fetch('https://morning-reef-31954.herokuapp.com/foodOrderList')
             .then(res => res.json())
             .then(data => setOrder(data))
     }, [])
 
 
     const statusUpdated = () => {
-        fetch('http://localhost:5000/foodOrderList')
+        fetch('https://morning-reef-31954.herokuapp.com/foodOrderList')
             .then(res => res.json())
             .then(data => setOrder(data))
     }
@@ -23,7 +23,7 @@ const FoodOrderList = () => {
         const status = 'Pending'
         const user = { id, status };
 
-        const url = `http://localhost:5000/updateFoodOrderList/${id}`;
+        const url = `https://morning-reef-31954.herokuapp.com/updateFoodOrderList/${id}`;
         fetch(url, {
             method: 'PATCH',
             headers: {
@@ -46,7 +46,7 @@ const FoodOrderList = () => {
         const status = 'On going'
         const user = { id, status };
 
-        const url = `http://localhost:5000/updateFoodOrderList/${id}`;
+        const url = `https://morning-reef-31954.herokuapp.com/updateFoodOrderList/${id}`;
         fetch(url, {
             method: 'PATCH',
             headers: {
@@ -69,7 +69,7 @@ const FoodOrderList = () => {
         const status = 'Done'
         const user = { id, status };
 
-        const url = `http://localhost:5000/updateFoodOrderList/${id}`;
+        const url = `https://morning-reef-31954.herokuapp.com/updateFoodOrderList/${id}`;
         fetch(url, {
             method: 'PATCH',
             headers: {

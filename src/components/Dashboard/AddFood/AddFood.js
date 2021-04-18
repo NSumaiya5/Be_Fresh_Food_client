@@ -26,7 +26,7 @@ const AddFood = () => {
         formData.append('price', info.price);
 
 
-        fetch('http://localhost:5000/addService', {
+        fetch('https://morning-reef-31954.herokuapp.com/addService', {
             method: 'POST',
             body: formData
         })

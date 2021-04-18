@@ -12,7 +12,7 @@ const AddAdmin = () => {
 
         console.log(newAdminInfo);
 
-        const url = 'http://localhost:5000/addAdmin';
+        const url = 'https://morning-reef-31954.herokuapp.com/addAdmin';
         fetch(url, {
             method: 'POST',
             headers: {

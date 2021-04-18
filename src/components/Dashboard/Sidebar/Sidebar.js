@@ -13,7 +13,7 @@ const Sidebar = () => {
 
 
     useEffect(() => {
-        fetch('http://localhost:5000/checkAdmin', {
+        fetch('https://morning-reef-31954.herokuapp.com/checkAdmin', {
             method: 'POST',
             headers: { 'content-type': 'application/json' },
             body: JSON.stringify({ email: loggedInUser.email })

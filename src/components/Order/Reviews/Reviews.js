@@ -22,7 +22,7 @@ const Reviews = () => {
         formData.append('name', info.name);
         formData.append('comment', info.comment);
 
-        fetch('http://localhost:5000/addReview', {
+        fetch('https://morning-reef-31954.herokuapp.com/addReview', {
             method: 'POST',
             body: formData
         })

@@ -27,7 +27,7 @@ const handlePaymentSuccess = paymentId => {
     }
     console.log(title)
 
-    fetch('http://localhost:5000/addOrder', {
+    fetch('https://morning-reef-31954.herokuapp.com/addOrder', {
         method: 'POST',
         headers: {
             'content-type': 'application/json'
@@ -43,7 +43,7 @@ const handlePaymentSuccess = paymentId => {
 }
 
     useEffect(() => {
-        fetch(`http://localhost:5000/order/${id}`)
+        fetch(`https://morning-reef-31954.herokuapp.com/order/${id}`)
             .then(res => res.json())
             .then(data => setFoodOrders(data));
     }, [id])

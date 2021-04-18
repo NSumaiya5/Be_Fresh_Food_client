@@ -23,7 +23,7 @@ const ViewOrderList = () => {
     const [loggedInUser, setLoggedInUser] = useContext(UserContext);
 
     useEffect(() => {
-        fetch('http://localhost:5000/orderList?email=' + loggedInUser.email)
+        fetch('https://morning-reef-31954.herokuapp.com/orderList?email=' + loggedInUser.email)
             .then(res => res.json())
             .then(data => setOrders(data))
     }, [loggedInUser.email])
